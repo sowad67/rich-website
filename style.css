@@ -130,9 +130,9 @@ body {
 .contact-us {
     color: white;
     box-sizing: border-box;
-    margin-bottom: 50%;
-    margin-left: 20%;
     font-size: 1.3rem;
+    margin-bottom: 200px;
+    margin-left: 50px;
 }
 
 .contact h3 {
