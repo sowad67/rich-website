@@ -59,43 +59,45 @@
     <!-- Contact Section -->
         <section class="contact">
             <div class="contact-box">
-                <div class="contact-form"> <!--Changed "contact-left" to "contact-form"-->
+                <div class="contact-form">
                     <h3>Send Your Request</h3>
-                    <form action="">
-    
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="971da7b0-700e-4ee7-ba1b-2e1aabc5238b">
+                                                                     <!-- Change Access Key -->
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Name</label>
-                                <input type="text" placeholder="Enter Name">
+                                <input type="text" name="Name" placeholder="Enter Name">
                             </div>
                             <div class="input-group">
                                 <label>Phone Number</label>
-                                <input type="text" placeholder="Enter Phone Number">
+                                <input type="text" name="Phone Number" placeholder="Enter Phone Number">
                             </div>
                         </div>
 
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Email</label>
-                                <input type="text" placeholder="Enter Email">
+                                <input type="text" name="Email" placeholder="Enter Email">
                             </div>
                             <div class="input-group">
                                 <label>Subject</label>
-                                <input type="text" placeholder="Enter Subject">
+                                <input type="text" name="Subject" placeholder="Enter Subject">
                             </div>
                         </div>
     
                         <label>Message</label>
-                        <textarea rows="5" placeholder="Enter Message"></textarea>
+                        <textarea rows="5" name="Message" placeholder="Enter Message"></textarea>
                         <button type="submit" class="submit">SEND</button>
                     </form>  
                 </div>
 
                 <div class="contact-img">
-                    <img src="img/contact-image.png" alt="An image of the author."> <!--Added contact image-->
+                    <img src="img/contact-image.png" alt="An image of the author."> 
                 </div>
-            
-                <div class="contact-us"> <!--Changed "contact-right" to "contact-us"-->
+                <div class="contact-us-container">
+                <div class="contact-us"> 
                     <h3>Contact Us</h3>
     
                     <table>
@@ -110,9 +112,10 @@
                     </table>
     
                 </div>
+                </div>
             </div>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
         </section>
-    <!-- Add functionality to form -->
     </main>
 
     <footer>
