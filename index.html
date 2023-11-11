@@ -18,13 +18,18 @@
 
 <body>
     <!-- Background Video -->
-    <video playsinline autoplay muted loop poster id="bgvid">
+    <video playsinline autoplay muted loop poster="img/background-poster.jpg" id="bgvid">
         <source src="vid/background-vid.mp4" type="video/mp4">
     </video>
 
    <main>
     <!-- Hero Section -->
         <section class="hero">
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
             <img src="img/enigma-logo.png" alt="Enigma Logo">
         </section>
     <!-- About Me Section -->
@@ -123,6 +128,6 @@
     <footer>
         <img src="img/enigma-logo.png" Alt="Enigma Logo">
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
