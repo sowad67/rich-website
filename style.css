@@ -1,6 +1,6 @@
 /* Universal */
 * {
-    color: white;
+    /* color: white; */
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -36,6 +36,7 @@ video#bgvid {
 /* Hero Section */
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90vh;
@@ -45,8 +46,15 @@ video#bgvid {
 .hero img {
     max-width: 45%;
     height: auto;
-    margin-top: 80px;
+    margin-top: 100px;
     animation: breathe 3500ms infinite forwards;
+}
+
+.hero h1 {
+    background-color:rgba(0,0,0,0.7);
+    text-align: center;
+    color: rgb(142,217,52);
+    margin-top: 10px;
 }
 
 /* Breathing Logo */
@@ -59,56 +67,6 @@ video#bgvid {
     }
 }
 
-/* Green Arrows */
-.arrows {
-    width: 60px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    margin-left: -30px;
-    bottom: 20px;
-    transform: rotate(180deg);
-  }
-  
-  .arrows path {
-    stroke: #92d53f;
-    fill: transparent;
-    stroke-width: 1px;  
-    animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite; 
-  }
-  
-  @keyframes arrow
-  {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
-  }
-  
-  @-webkit-keyframes arrow 
-  {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
-  }
-  
-  .arrows path.a1 {
-    animation-delay:-1s;
-    -webkit-animation-delay:-1s; 
-  }
-  
-  .arrows path.a2 {
-    animation-delay:-0.5s;
-    -webkit-animation-delay:-0.5s;
-  }
-  
-  .arrows path.a3 { 
-    animation-delay:0s;
-    -webkit-animation-delay:0s; 
-  }
-
 /* About Section */
 .about-me {
     display: flex;
@@ -117,6 +75,7 @@ video#bgvid {
     align-items: center;
     height: 500px;
     gap: 50px;
+    color: white;
 }
 
 .about-text {
@@ -152,6 +111,7 @@ video#bgvid {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    color: white;
 }
 
 .services h2 {

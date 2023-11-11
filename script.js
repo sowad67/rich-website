@@ -1,3 +1,5 @@
+window.onload = function () {
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -21,7 +23,7 @@ TxtType.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 80;
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -39,18 +41,18 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
         if (toRotate) {
           new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
     }
+
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-};
+}
+}
