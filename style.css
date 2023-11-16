@@ -1,13 +1,12 @@
 /* Universal */
 * {
-    /* color: white; */
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 main {
-    position:relative;
+    position: relative;
 }
 
 /* Body + Background */
@@ -19,6 +18,7 @@ body {
 /* Background Video */
 video#bgvid { 
     position: fixed;
+    filter: brightness(30%);
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -32,6 +32,54 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
 }
 
+/* Arrows */
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: fixed; 
+    left: 50%;
+    margin-left: -30px;
+    bottom: 100px;
+}
+
+  .arrows path {
+    stroke: rgb(142,217,52);
+    fill: transparent;
+    stroke-width: 1px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
 
 /* Hero Section */
 .hero {
@@ -46,26 +94,25 @@ video#bgvid {
 .hero img {
     max-width: 45%;
     height: auto;
-    margin-top: 100px;
-    animation: breathe 3500ms infinite forwards;
+    /* margin-top: 100px; */
+    /* animation: breathe 3500ms infinite forwards; */
 }
 
 .hero h1 {
-    background-color:rgba(0,0,0,0.7);
     text-align: center;
     color: rgb(142,217,52);
-    margin-top: 10px;
+    margin: 10px 0px; 
 }
 
 /* Breathing Logo */
-@keyframes breathe {
+/* @keyframes breathe {
     50% {
         transform: scaleX(1.1) scaleY(1.1);
     }
     100% {
         transform: scaleX(1) scaleY(1);
     }
-}
+}  */
 
 /* About Section */
 .about-me {
@@ -82,7 +129,7 @@ video#bgvid {
     text-align: center;
     width: 40%;
     line-height: 2;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.6);
     border-radius: 10px;
     padding: 10px;
 }
@@ -135,7 +182,7 @@ video#bgvid {
     gap: 10px;
     max-width: 20%;
     text-align: center;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.6);
     border-radius: 10px;
     padding: 15px 10px;
     font-size: 1rem;
@@ -165,7 +212,7 @@ video#bgvid {
     font-size: 1.3rem;
     margin-bottom: 150px;
     margin-left: 50px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.6);
     border-radius: 3px;
     padding: 2px;
 }
@@ -224,7 +271,7 @@ label {
    height: 35px;
    border-radius: 30px;
    margin-top: 20px;
-   box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.6);
+   box-shadow: 0px 5px 15px 0px rgba(142, 217, 52, 0.593);
 }
 
 .contact-form h3 {

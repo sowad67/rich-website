@@ -56,3 +56,19 @@ TxtType.prototype.tick = function() {
     document.body.appendChild(css);
 }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
+        var arrows = document.querySelector('.arrows');
+        var scrollPosition = window.scrollY || window.pageYOffset;
+
+        // Adjust this value based on when you want the rotation to occur
+        var scrollThreshold = document.documentElement.scrollHeight - window.innerHeight - 100;
+
+        if (scrollPosition >= scrollThreshold) {
+            arrows.style.transform = 'rotate(180deg)';
+        } else {
+            arrows.style.transform = 'none'; // Reset rotation
+        }
+    });
+});
