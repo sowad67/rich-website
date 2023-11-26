@@ -66,9 +66,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var scrollThreshold = document.documentElement.scrollHeight - window.innerHeight - 100;
 
         if (scrollPosition >= scrollThreshold) {
-            arrows.style.transform = 'rotate(180deg)';
+            arrows.style.transform = 'rotate(180deg) translateY(70px)';
         } else {
             arrows.style.transform = 'none'; // Reset rotation
         }
     });
+
 });

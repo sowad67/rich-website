@@ -32,6 +32,20 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
 }
 
+/* Fade In */
+/* .fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.left {
+    transform: translateX(-50%);
+}
+
+.right {
+    transform: translateX(50%);
+} */
+
 /* Arrows */
 .arrows {
     width: 60px;
@@ -39,7 +53,7 @@ video#bgvid {
     position: fixed; 
     left: 50%;
     margin-left: -30px;
-    bottom: 100px;
+    bottom: 10px;
 }
 
   .arrows path {
@@ -94,7 +108,7 @@ video#bgvid {
 .hero img {
     max-width: 45%;
     height: auto;
-    /* margin-top: 100px; */
+    margin-top: 80px;
     /* animation: breathe 3500ms infinite forwards; */
 }
 
