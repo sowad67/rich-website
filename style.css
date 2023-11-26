@@ -33,18 +33,34 @@ video#bgvid {
 }
 
 /* Fade In */
-/* .fade-in {
+.fade-in-left,
+.fade-in-right,
+.fade-in-top,
+.fade-in-bottom {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.left {
-    transform: translateX(-50%);
+.fade-in-left {
+    transform: translateX(-20px);
 }
 
-.right {
-    transform: translateX(50%);
-} */
+.fade-in-right {
+    transform: translateX(20px);
+}
+
+.fade-in-top {
+    transform: translateY(-20px);
+}
+
+.fade-in-bottom {
+    transform: translateY(20px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
 
 /* Arrows */
 .arrows {
