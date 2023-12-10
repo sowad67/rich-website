@@ -125,7 +125,7 @@ video#bgvid {
     max-width: 45%;
     height: auto;
     margin-top: 80px;
-    /* animation: breathe 3500ms infinite forwards; */
+    animation: breathe 3500ms infinite forwards;
 }
 
 .hero h1 {
@@ -135,14 +135,14 @@ video#bgvid {
 }
 
 /* Breathing Logo */
-/* @keyframes breathe {
+@keyframes breathe {
     50% {
         transform: scaleX(1.1) scaleY(1.1);
     }
     100% {
         transform: scaleX(1) scaleY(1);
     }
-}  */
+} 
 
 /* About Section */
 .about-me {
